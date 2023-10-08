@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+main {
+    padding: 10px;
+}
+
+/* Add a class for right-aligned images */
+/* CSS for customizing the dropdown */
+#dropdown {
+    width: 300px; /* Adjust the width as needed */
+    padding: 10px; /* Add padding for better appearance */
+    font-size: 16px; /* Adjust the font size as needed */
+    border: 2px solid #ccc; /* Add a border */
+    border-radius: 5px; /* Add rounded corners */
+    background-color: #fff; /* Set the background color */
+}
+
+/* Style the dropdown options */
+#dropdown option {
+    font-size: 15px; /* Adjust the font size for options */
+    padding: 5px; /* Add padding for options */
+}
+
+#content img {
+    width: 300px; /* Adjust the width as needed */
+    height: auto;
+    padding: 20px; /* Maintain the aspect ratio */
+}
+
+h1{
+    text-align: center;
+    font-size: 2em;
+    background-color: #df87db;
+    color: #000;
+}
+h3{
+    padding: 5px;
+}
+
+.logo {
+    width: 60px; /* Adjust the width as needed */
+    height: auto; /* Maintains aspect ratio */
+    margin-right: 1px; /* Adds some space to the right of the logo */
+}

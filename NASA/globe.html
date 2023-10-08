@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://cesium.com/downloads/cesiumjs/releases/1.107.1/Build/Cesium/Cesium.js"></script>
+  <link href="https://cesium.com/downloads/cesiumjs/releases/1.107.1/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  
+  <div id="cesiumContainer" class="fullSize">
+    <h3>TerraScan</h3>
+  
+  <script type="module">
+   
+    Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIwZGFiOTY0Yy01NjgzLTQ0NWYtYWVmNy0zNGUxN2MwMjFjMTAiLCJpZCI6MTcwNDEzLCJpYXQiOjE2OTY2NTgyMzF9.aLvy4hG5wgmnhUb8g6rJtvhr__XiswanvTTDdVHYxJw';
+  
+    // Initialize the viewer with Cesium World Terrain.
+  // Create the Cesium Viewer
+  const viewer = new Cesium.Viewer("cesiumContainer", {
+  terrain: Cesium.Terrain.fromWorldTerrain({
+    requestVertexNormals: true,
+    requestWaterMask: true,
+    geocoder:true,
+  }),
+});
+viewer.scene.globe.enableLighting = true;
+
+
+viewer.camera.lookAtTransform(Cesium.Matrix4.IDENTITY);
+// Disable zooming
+viewer.scene.screenSpaceCameraController.enableZoom = true;
+  // set lighting to true
+  viewer.scene.globe.enableLighting = true;
+  // adjust time so scene is lit by sun
+ 
+  </script>
+</body>
+</html>
+
+
+<style type="text/css">
+  /* ... other styles ... */
+  body {
+    margin: 0;
+    background-color: black; 
+    
+  }
+  h3{
+    text-align: center;
+    color: aliceblue;
+    font-weight:bold;
+  }
+  
+</style>
+
+
+
+
+
